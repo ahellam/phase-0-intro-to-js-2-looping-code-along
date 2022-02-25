@@ -1,19 +1,17 @@
-const arr1 =[]
 function writeCards(names, event){
-  let arr2 = [...arr1];
+  let arr = []
     for (let i = 0; i < names.length; i++) {
-        arr2.push (`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
-        // debugger;
+        arr.push (`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
       }
-      return arr2;
+      return arr;
 }
 
-writeCards(["Guadalupe", "Ollie", "Aki"], "suprise");
+console.log(writeCards(["Guadalupe", "Ollie", "Aki"], "suprise"));
 
 function countDown(num){
-    let number = num;
-    while (number >= 0){
-        console.log(number);
-        number --;
+    while (num >= 0){
+        console.log(num);
+        num --;
     }
 }
+console.log(countDown(11));
